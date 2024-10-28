@@ -18,4 +18,11 @@ public class SearchApi {
 
         return ResponseEntity.ok("Search API V1");
     }
+
+
+    @GetMapping("/api-v2")
+    public ResponseEntity<?> searchApiV2(@RequestBody String query) {
+
+        return ResponseEntity.ok("Search API V2");
+    }
 }
